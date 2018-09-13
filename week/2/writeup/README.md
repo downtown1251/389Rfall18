@@ -91,11 +91,11 @@ After studying how to use python sockets, I set up the stub.py to successfully c
 attempt a brute force attack. 
 
 ######Brute Force Attack
-I then began to run my previously built attack with different user names. I initially use dthe names of the 
-pokemon characters shown on the Instagram page. However, it became more likely to me that this was most likely a 
+I then began to run my previously built attack with different user names. I initially used the names of the 
+pokemon characters shown on the Instagram page. However, it became more likely to me that this was  a 
 password rather than a username. Mostly because I kept seeing pokemon as a password in rockyou.txt. From there, 
 I start looking at user names centered around Fred Krueger himself to include his email address and various other 
-personal and company user names. 
+personal and company related user names.
 
 After locating the correct username which was a part of kruegster1990's email address access to the admin shell 
 was achieved. From there, I determined the first place to look was within the home directory. From there I moved 

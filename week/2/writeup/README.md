@@ -20,14 +20,20 @@ Digital acknowledgement of honor pledge: *Kate Mann*
 2. List all personal information (including social media accounts) you can find about him. For each, briefly detail how you discovered them.
 
     * ######Answer
-    * Email: kruegster1990@tutanota.com
+    * Email: kruegster@tutanota.com
         * How: Bio [link](http://cornerstoneairlines.co/about.html) about section.
+     
+    * Job: Fred Krueger is the owner of cornerstone airlines
+        * How: The about section of cornerstone airlines website. 
 
     * Twitter: [kruegster1990 twitter page](https://twitter.com/kruegster1990)
         * How: Basic Twitter search
      
     * Instagram: [kruegster1990 instagram page](https://www.instagram.com/kruegster1990/)
-        * IntelTechniques username search
+        * How: IntelTechniques username search
+    
+    * Likes: Fred Krueger really loves Pokemon
+        * How: Twitter has a link to Pokemon Go cyber risk article and Instagram has Pokemon pictures. 
 
 3. What is the IP address of the webserver hosting his company's site? How did you discover this?
     * ######Answer
@@ -44,7 +50,7 @@ Digital acknowledgement of honor pledge: *Kate Mann*
 
 5. Did you find any other IP addresses associated with this website? What do they link to, or where did you find them?
     * ######Answer
-    * Admin: [Admin Website](http://142.93.117.193/)
+    * Admin: [Admin Website](http://142.93.117.193/) 142.93.117.193
         * How: Clicked on the admin section of the website. 
 
 6. If you found any associated server(s), where are they located? How did you discover this?
@@ -69,22 +75,30 @@ Digital acknowledgement of honor pledge: *Kate Mann*
 
     * Flag: CMSC389R-{fly_th3_sk1es_w1th_u5}
         * Location: found after looking at robot.txt and adding /secret to cornerstoneairlines.co domain name.
+     
+    * Flags: CMSC389R-{c0rn3rstone-air-27600} up to CMSC389R-{c0rn3rstone-air-27999}
+        * Location: after running `$: cat *` in the flight_records directory I learned that every record had a different
+                    flag associated with it. 
 
 
 ### Part 2 (55 pts)
 
-*Setup*
+######Setup
 The first thing I did was to determine the correct ip address and port number. I was able to determine that the admin 
 IP address was most likely the correct address. After using nmap -p- on the IP address I tried nc <IP> <Port> for 
-every port until I got a login prompt. After finding the correct port, I then went to work on stub.py. Some 
-studying of how to use python sockets, I set up the correct code to successfully connect to the IP and port to 
+every port until I got a login prompt for port 1337. After finding the correct port, I then went to work on stub.py. 
+After studying how to use python sockets, I set up the stub.py to successfully connect to the IP and port to 
 attempt a brute force attack. 
 
-*Brute Force Attack*
-I then began to run my previously built attack with different usernames. I attempted to use the names of the 
-pokemon characters shown on the Instagram page, email address, and various other usernames. 
+######Brute Force Attack
+I then began to run my previously built attack with different user names. I initially use dthe names of the 
+pokemon characters shown on the Instagram page. However, it became more likely to me that this was most likely a 
+password rather than a username. Mostly because I kept seeing pokemon as a password in rockyou.txt. From there, 
+I start looking at user names centered around Fred Krueger himself to include his email address and various other 
+personal and company user names. 
 
-*Results*
-If I can get the correct login information I will use the ticket information posted on Instragram to find
-the correct flight information and flag to attempt solving the challenge. However, the brute force attack is going
-very slowly. 
+After locating the correct username which was a part of kruegster1990's email address access to the admin shell 
+was achieved. From there, I determined the first place to look was within the home directory. From there I moved 
+into the flight records directory where I used the posted ticket on [instagram](https://www.instagram.com/kruegster1990/) 
+to find the correct flight information and flag. The flag is CMSC389R-{c0rn3rstone-air-27670}. 
+

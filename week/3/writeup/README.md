@@ -11,7 +11,7 @@ Digital acknowledgement of honor pledge: *Kate Mann*
 ## Assignment 3 Writeup
 
 ### Part 1 (100 pts)
-##### Weakness 1
+#### Weakness 1
 * Weakness: Secure web server password 
 
   * Issues: 
@@ -30,6 +30,7 @@ Digital acknowledgement of honor pledge: *Kate Mann*
         * Always logout of accounts when done using a computer. Some browsers will remain logged into accounts even 
           after closing the browser. 
         * Consider using Multi-factor authentication (more information listed below). 
+        * Create password requirements from above recommendations for employee company accounts. 
       
     * Password Manager: 
         * A password manager generates and stores random, long, and unique passwords for a variety of accounts.
@@ -48,7 +49,7 @@ Digital acknowledgement of honor pledge: *Kate Mann*
     * 3: [Creating a Password Tip Card, DHS, undated](https://www.dhs.gov/sites/default/files/publications/Best%20Practices%20for%20Creating%20a%20Password.pdf)
     * 4: [Everything You Need to Know About Password Managers, Consumer Reports, 07 February 2017](https://www.consumerreports.org/digital-security/everything-you-need-to-know-about-password-managers/)
 
-##### Weakness 2
+#### Weakness 2
 * Weakness: Social Media Vulnerabilities
 
     * Issues: 
@@ -67,17 +68,35 @@ Digital acknowledgement of honor pledge: *Kate Mann*
           more personal information)
         * Recommend removing Fred Krueger's email address off cornerstoneairlines about section. Should create a 
           generic business email address rather than using personal email address. 
+        * Create company yearly training to advise employees on how to protect their social media accounts 
         
 * Sources: 
     * 1: [Security Tip (ST05-013), U.S. Cert, 22 June 2005](https://www.us-cert.gov/ncas/tips/ST06-003)
     * 2: [Security Tip (ST04-014), U.S. Cert, 22 October 2009](https://www.us-cert.gov/ncas/tips/ST04-014)
     
 
-##### Weakness 3
+#### Weakness 3
 * Weakness: IP Address listed on Cornerstone Airlines admin page with exposed port. 
 
     * Issues: 
+        * IP address for Cornerstone Airlines admin page is displayed in address bar.
+        * Company web server port is exposed. 
+        * Network firewall is accepting traffic from outside the network. 
+        * Brute-force attack and network mapping were not detected or addressed by network administrators. 
 
 * Recommendations:
+    * Recommend correcting settings or configurations that are redirecting address bar display from domain name to 
+      IP address. 
+    * Hide sensitive services behind a network firewall.
+    * If possible use public-key authentication rather than passwords to verify users login to sensitive systems. 
+    * Hide sensitive systems in higher port numbers to prevent attackers from using nmap to discover the port. This 
+      forces attackers to do a more in-depth scan that should trigger security administrator notification. 
+    * Install an Intrusion Detection System and Intrusion Prevention System to notify security administrators that malicious
+      activity is occurring on the network.
+    * Create mandatory yearly training for security administrators to identify network security risks. 
+    
 
 * Sources: 
+    * 1: [Guidelines on Firewalls and Firewall Policy, NIST, September 2009](https://ws680.nist.gov/publication/get_pdf.cfm?pub_id=901083)
+    * 2: [What is IDS and IPS?](https://www.juniper.net/us/en/products-services/what-is/ids-ips/)
+    * 3: [SSH Scanning, ICS-CERT, 26 April 2010](https://ics-cert.us-cert.gov/tips/CSAR-10-114-01)

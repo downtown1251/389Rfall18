@@ -17,9 +17,9 @@ I began by searching the CVE database using linux ping AND command injection as 
 I then began looking through the various CVE's listed until I came upon CVE-2017-1000473. 
 I followed the link to [github](https://github.com/afaqurk/linux-dash/issues/447)
 I then used `nc cornerstoneairlines.co 45` command.
-For the IP address I then put `module=;ls -al`. This gave me the directory listings. 
-I then put `module=;cd home && ls -al`
-This listed flag.txt so then I executed `module=;cat /home/flag.txt`
+For the IP address I then put `;ls -al`. This gave me the directory listings. 
+I then put `;cd home && ls -al`
+This listed flag.txt so then I executed `;cat /home/flag.txt`
 
 
 ### Part 2 (55 pts)

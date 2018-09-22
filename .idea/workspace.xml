@@ -79,9 +79,9 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/week/4/writeup/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="270">
-                <caret line="18" column="51" lean-forward="true" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="315">
+                <caret line="21" column="41" lean-forward="true" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
               </first_editor>
               <second_editor />
             </state>
@@ -135,9 +135,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="499" />
-    <option name="y" value="131" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="116" />
+    <option name="y" value="87" />
     <option name="width" value="1167" />
     <option name="height" value="870" />
   </component>
@@ -210,7 +210,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537598833423" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537637246456" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -304,10 +304,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1851" height="974" extended-state="6" />
+    <frame x="116" y="87" width="1167" height="870" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49880096" weight="0.18227147" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49880096" weight="0.29348797" />
       <window_info id="Structure" order="1" sideWeight="0.50119907" side_tool="true" weight="0.30493274" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -322,9 +322,9 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3297491" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4997227" weight="0.3093623" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.4997227" visible="true" weight="0.35278153" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5011211" side_tool="true" weight="0.42798355" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="9" sideWeight="0.49887893" visible="true" weight="0.2782402" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49887893" weight="0.2782402" />
       <window_info anchor="bottom" id="Messages" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -527,9 +527,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/week/4/writeup/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="270">
-            <caret line="18" column="51" lean-forward="true" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="315">
+            <caret line="21" column="41" lean-forward="true" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
           </first_editor>
           <second_editor />
         </state>

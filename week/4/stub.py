@@ -64,30 +64,6 @@ class CornerstoneShell(Cmd):
             print("Exiting the Cornerstone Airlines Shell\n")
             return True
 
-    def do_pull(self, args):
-        """
-        This command executes a pull request from a remote path to a local path
-        Example:
-        Pull <remote_path> <local_path>
-        """
-        if args == "":
-            self.do_help("pull")
-
-        paths = args.split()
-        if len(paths) != 2:
-            self.do_help("pull")
-        else:
-            filename = paths[0].split('/')
-            if len(filename) == 1:
-                execute_cmd('cat ' + filename[0])
-            else:
-                pwd = ""
-                for x in range(0, len(filename) - 1):
-                    pwd += filename[x] + "/"
-                execute_cmd('cd ' + pwd + ' && cat ' + filename[len(filename) - 1])
-            f = open(paths[1], "w+")
-            f.write(saved_output)
-
     def do_pwd(self, args):
         """
         This command displays the current path to the working directory.
@@ -205,6 +181,30 @@ class Shell(Cmd):
         """
         print("Goodbye!\n")
         raise SystemExit
+
+    def do_pull(self, args):
+        """
+        This command executes a pull request from a remote path to a local path
+        Example:
+        Pull <remote_path> <local_path>
+        """
+        if args == "":
+            self.do_help("pull")
+
+        paths = args.split()
+        if len(paths) != 2:
+            self.do_help("pull")
+        else:
+            filename = paths[0].split('/')
+            if len(filename) == 1:
+                execute_cmd('cat ' + filename[0])
+            else:
+                pwd = ""
+                for x in range(0, len(filename) - 1):
+                    pwd += filename[x] + "/"
+                execute_cmd('cd ' + pwd + ' && cat ' + filename[len(filename) - 1])
+            f = open(paths[1], "w+")
+            f.write(saved_output)
 
     def do_clear(self, args):
         """

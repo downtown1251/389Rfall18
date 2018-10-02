@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="321d0234-42a2-4574-834e-422b69199bc1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/week/5/myfuncs.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week/4/stub.py" beforeDir="false" afterPath="$PROJECT_DIR$/week/4/stub.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week/4/writeup/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/week/4/writeup/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week/5/myfuncs.S" beforeDir="false" afterPath="$PROJECT_DIR$/week/5/myfuncs.S" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week/5/writeup/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/week/5/writeup/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,24 +18,28 @@
     <session id="-1671015890">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="12" />
           <entry key="project.open.time.10" value="5" />
           <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="3" />
-          <entry key="project.opened" value="14" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="Makefile" value="2" />
+          <entry key="S" value="3" />
+          <entry key="c" value="6" />
           <entry key="cybersecurity" value="1" />
           <entry key="email" value="1" />
-          <entry key="md" value="27" />
+          <entry key="md" value="32" />
           <entry key="namejob" value="1" />
-          <entry key="png" value="4" />
+          <entry key="png" value="5" />
           <entry key="py" value="7" />
           <entry key="travel" value="1" />
           <entry key="travelsec" value="1" />
@@ -44,22 +49,25 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Image" value="4" />
-          <entry key="Markdown" value="26" />
-          <entry key="PLAIN_TEXT" value="42" />
+          <entry key="C++" value="6" />
+          <entry key="Image" value="5" />
+          <entry key="Markdown" value="31" />
+          <entry key="PLAIN_TEXT" value="47" />
           <entry key="Python" value="7" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="md" value="29251" />
+          <entry key="S" value="1233" />
+          <entry key="md" value="30157" />
           <entry key="py" value="8288" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Markdown" value="29251" />
+          <entry key="Markdown" value="30157" />
+          <entry key="PLAIN_TEXT" value="1233" />
           <entry key="Python" value="8288" />
         </counts>
       </usages-collector>
@@ -67,25 +75,13 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/week/4/writeup/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="405">
-                <caret line="85" column="55" selection-start-line="85" selection-start-column="55" selection-end-line="85" selection-end-column="55" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/week/4/README.md">
+        <entry file="file://$PROJECT_DIR$/week/5/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SECOND">
-              <first_editor relative-caret-position="315">
-                <caret line="21" column="53" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
+              <first_editor relative-caret-position="180">
+                <caret line="12" column="41" lean-forward="true" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
               </first_editor>
               <second_editor />
             </state>
@@ -93,35 +89,40 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/week/4/stub.py">
+        <entry file="file://$PROJECT_DIR$/week/5/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="64" column="23" selection-start-line="64" selection-start-column="23" selection-end-line="64" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#190#1" />
-                <element signature="e#192#205#0" expanded="true" />
-                <element signature="e#385#1143#0" />
-                <element signature="e#327#849#1" />
-                <element signature="e#1183#1402#0" />
-                <element signature="e#1171#1235#1" />
-                <element signature="e#1954#2213#0" />
-                <element signature="e#1688#1752#1" />
-                <element signature="e#1968#2493#0" />
-                <element signature="e#2043#2387#0" />
-                <element signature="e#2988#3252#0" />
-                <element signature="e#2754#2934#0" />
-                <element signature="e#2988#3157#0" />
-                <element signature="e#3209#3359#0" />
-                <element signature="e#2763#2776#0" />
-                <element signature="e#2754#2818#1" />
-                <element signature="e#3460#4007#0" />
-                <element signature="e#3670#3768#2" />
-                <marker date="1538019952706" expanded="false" signature="358:359" ph="..." />
-                <marker date="1538019952706" expanded="true" signature="1189:1195" ph="..." />
-                <marker date="1538019952706" expanded="true" signature="3787:4031" ph="..." />
-                <marker date="1538019952706" expanded="true" signature="4207:5661" ph="..." />
-                <marker date="1538019952706" expanded="true" signature="5520:5525" ph="..." />
-              </folding>
+            <state relative-caret-position="150">
+              <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/week/5/writeup/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="300">
+                <caret line="20" column="63" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/week/5/myfuncs.S">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/week/5/examples/loop/fib.S">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -152,6 +153,8 @@
         <option value="$PROJECT_DIR$/week/3/writeup/README.md" />
         <option value="$PROJECT_DIR$/week/4/stub.py" />
         <option value="$PROJECT_DIR$/week/4/writeup/README.md" />
+        <option value="$PROJECT_DIR$/week/5/writeup/README.md" />
+        <option value="$PROJECT_DIR$/week/5/myfuncs.S" />
       </list>
     </option>
   </component>
@@ -162,9 +165,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="174" />
-    <option name="y" value="67" />
-    <option name="width" value="1259" />
+    <option name="x" value="927" />
+    <option name="y" value="51" />
+    <option name="width" value="973" />
     <option name="height" value="880" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -207,25 +210,27 @@
               <item name="389Rfall18" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="389Rfall18" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="week" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="2" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="5" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="389Rfall18" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="389Rfall18" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="week" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="4" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="5" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="examples" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="389Rfall18" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="389Rfall18" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="week" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="4" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="5" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="writeup" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -237,11 +242,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538022529218" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538157948149" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -358,10 +362,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="174" y="67" width="1259" height="880" extended-state="0" />
+    <frame x="927" y="51" width="973" height="880" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49880096" visible="true" weight="0.23742786" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49880096" visible="true" weight="0.24056095" />
       <window_info id="Structure" order="1" sideWeight="0.50119907" side_tool="true" weight="0.30493274" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -376,9 +380,9 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3297491" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.4997227" visible="true" weight="0.2476573" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.4997227" visible="true" weight="0.3587684" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5011211" side_tool="true" weight="0.42798355" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49887893" weight="0.4165536" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49887893" weight="0.416332" />
       <window_info anchor="bottom" id="Messages" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -550,19 +554,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HW_Submit_Instructions.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor relative-caret-position="1215">
-            <caret line="81" column="29" selection-start-line="81" selection-start-column="29" selection-end-line="81" selection-end-column="29" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week/4/shellimg.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/week/3/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SECOND">
@@ -581,37 +572,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week/4/stub.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="64" column="23" selection-start-line="64" selection-start-column="23" selection-end-line="64" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#190#1" />
-            <element signature="e#192#205#0" expanded="true" />
-            <element signature="e#385#1143#0" />
-            <element signature="e#327#849#1" />
-            <element signature="e#1183#1402#0" />
-            <element signature="e#1171#1235#1" />
-            <element signature="e#1954#2213#0" />
-            <element signature="e#1688#1752#1" />
-            <element signature="e#1968#2493#0" />
-            <element signature="e#2043#2387#0" />
-            <element signature="e#2988#3252#0" />
-            <element signature="e#2754#2934#0" />
-            <element signature="e#2988#3157#0" />
-            <element signature="e#3209#3359#0" />
-            <element signature="e#2763#2776#0" />
-            <element signature="e#2754#2818#1" />
-            <element signature="e#3460#4007#0" />
-            <element signature="e#3670#3768#2" />
-            <marker date="1538019952706" expanded="false" signature="358:359" ph="..." />
-            <marker date="1538019952706" expanded="true" signature="1189:1195" ph="..." />
-            <marker date="1538019952706" expanded="true" signature="3787:4031" ph="..." />
-            <marker date="1538019952706" expanded="true" signature="4207:5661" ph="..." />
-            <marker date="1538019952706" expanded="true" signature="5520:5525" ph="..." />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/week/4/writeup/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="405">
+            <caret line="85" column="55" selection-start-line="85" selection-start-column="55" selection-end-line="85" selection-end-column="55" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week/4/shellimg.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/week/4/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -623,13 +595,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week/4/writeup/README.md">
+    <entry file="file://$PROJECT_DIR$/week/4/stub.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13">
+          <caret line="64" column="23" selection-start-line="64" selection-start-column="23" selection-end-line="64" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week/5/examples/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="405">
-            <caret line="85" column="55" selection-start-line="85" selection-start-column="55" selection-end-line="85" selection-end-column="55" />
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HW_Submit_Instructions.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SECOND">
+          <first_editor relative-caret-position="1215">
+            <caret line="81" column="29" selection-start-line="81" selection-start-column="29" selection-end-line="81" selection-end-column="29" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week/5/examples/loop/Makefile">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week/5/examples/loop/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" lean-forward="true" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week/5/examples/loop/fib.S">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week/5/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week/5/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SECOND">
+          <first_editor relative-caret-position="180">
+            <caret line="12" column="41" lean-forward="true" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week/5/writeup/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="300">
+            <caret line="20" column="63" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week/5/myfuncs.S">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
         </state>
       </provider>
     </entry>

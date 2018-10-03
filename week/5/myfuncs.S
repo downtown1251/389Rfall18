@@ -5,9 +5,9 @@ my_memset:
         push rbp      ;saves the base pointer for the previous function's stack frame
         mov rbp, rsp  ;moves up the base pointer to the top of the stack to create a new frame
 
-        mov rcx, rdx  ;moves the string length to rcx
+        mov rcx, rdx    ;moves the string length to rcx
         lea r12, [rdi]  ;moves the string pointer to a permanent register so that it may be recovered
-        xor rax, rax  ;ensure return register is empty
+        xor rax, rax    ;ensure return register is empty
         mov r11, 0
 
 m_loop:

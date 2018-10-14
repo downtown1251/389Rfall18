@@ -25,7 +25,7 @@ Digital acknowledgement of honor pledge: *Kate Mann*
 6. 
 * `CMSC389R-{look_I_f0und_a_str1ng}` Found by doing a hexdump of the image. Also, could have used the 
 strings command `strings image | grep -C1 "CMSC"`
-*  `CMSC389R-{abr@cadabra` Found by using `binwalk image` which showed that there was also a png file 
+*  `CMSC389R-{abr@cadabra}` Found by using `binwalk image` which showed that there was also a png file 
 associated with the JPEG file. Using `binwalk --dd="png:png" image` extracted the picture and showed the
 flag. 
 

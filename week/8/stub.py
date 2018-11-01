@@ -4,6 +4,7 @@ import sys
 import struct
 import binascii
 import datetime
+import base64
 
 
 # You can use this method to exit on failure conditions.
@@ -37,27 +38,78 @@ def print_section_header(item):
 def print_ascii(length, offset, size):
     ascii = ""
     totalBytes = 0
-    while totalBytes <= len(str(length)):
-
+    while totalBytes <= int(length):
         item = struct.unpack(f, data[offset:size])
         for i in item:
             stripped = str(hex(i)).strip("0x")
             if len(stripped) % 2 != 0:
                 stripped += "0"
             s = binascii.unhexlify(stripped)
+            totalBytes += int(len(s))
+            if totalBytes > int(length):
+                break
             ascii += s[::-1]
-            totalBytes += len(s)
 
+        if totalBytes > int(length):
+            break
         offset = size
-        size += struct.calcsize(f)
-        totalBytes = len(ascii)
-        print(totalBytes)
-
+        size += 8
 
     print(ascii)
-    return size
+
+def print_array_of_words(length, offset, size):
+    array = []
+    totalBytes = 0
+    while totalBytes <= int(length):
+        item = struct.unpack(f, data[offset:size])
+
+        for s in item:
+            totalBytes += len(str(s))
+            if len(array) >= int(length) / 4:
+                break
+            array.append(s)
+        offset = size
+        size += 8
+    print(array)
 
 
+def print_lat_long(length, offset, size):
+    x = ""
+    totalBytes = 0
+    while totalBytes <= int(length):
+        item = struct.unpack(f, data[offset:size])
+        for i in item:
+            totalBytes += 4
+            if totalBytes > int(length):
+                break
+            x += str(float(i)) + " "
+        offset = size
+        size += 8
+
+    print(x)
+
+def print_section_ref(offset, size):
+    counter = 1
+    item = struct.unpack(f, data[offset:size])
+    for s in item:
+        if counter != 1:
+            break
+        counter += 1
+        print(s)
+
+def create_png(length, offset, size):
+    fh = open("the picture.png", "wb")
+    totalBytes = 0
+    while totalBytes <= int(length):
+        item = struct.unpack(f, data[offset:size])
+        for i in item:
+            totalBytes += 4
+            if totalBytes > int(length):
+                break
+            s = base64.b64encode(str(i))
+            fh.write(base64.b64decode(str(s)))
+        offset = size
+        size += 8
 
 
 
@@ -94,16 +146,16 @@ print("VERSION: %d" % int(version))
 print("-------  BODY  -------")
 f = "<LL"
 offset = 0
-size = int(struct.calcsize(f))
+size = 8
 sizeOfFile = len(data)
 start = True
 header = ""
-numSections = 0
+section_length = 0
 
 while start:
     s = print_header(struct.unpack(f, data[offset:size]))
     offset = size
-    size = size + struct.calcsize(f)
+    size = size + 8
     header += s.strip("\n")
 
     if size >= 32:
@@ -111,26 +163,109 @@ while start:
         print(header)
         numSections = header[len(header) - 2]
 
-start = True
-while start:
-    s = print_section_header(struct.unpack(f, data[offset:size]))
-    offset = size
-    size += struct.calcsize(f)
-
-    if size >= 40:
-        start = False
-        section_length = s.split()[1]
-        print(s)
-
-s = print_ascii(section_length, offset, size)
-offset = s
-size = s + 8
-
 
 s = print_section_header(struct.unpack(f, data[offset:size]))
 offset = size
-size += struct.calcsize(f)
+size += 8
+print("<===========Section 1==============>")
 print(s)
+
+print_ascii(s.split()[1], offset, size)
+offset += int(s.split()[1])
+size = offset + 8
+
+s = print_section_header(struct.unpack(f, data[offset:size]))
+offset = size
+size += 8
+print("<===========Section 2==============>")
+print(s)
+
+print_array_of_words(s.split()[1], offset, size)
+offset += int(s.split()[1])
+size = offset + 8
+
+s = print_section_header(struct.unpack(f, data[offset:size]))
+offset = size
+size += 8
+print("<===========Section 3==============>")
+print(s)
+
+print_lat_long(s.split()[1], offset, size)
+offset += int(s.split()[1])
+size = offset + 8
+
+s = print_section_header(struct.unpack(f, data[offset:size]))
+offset = size
+size += 8
+print("<===========Section 4==============>")
+print(s)
+
+print_section_ref(offset, size)
+offset += int(s.split()[1])
+size = offset + 8
+
+s = print_section_header(struct.unpack(f, data[offset:size]))
+offset = size
+size += 8
+print("<===========Section 5==============>")
+print(s)
+
+print_ascii(s.split()[1], offset, size)
+offset += int(s.split()[1])
+size = offset + 8
+
+s = print_section_header(struct.unpack(f, data[offset:size]))
+offset = size
+size += 8
+print("<===========Section 6==============>")
+print(s)
+
+print_ascii(s.split()[1], offset, size)
+offset += int(s.split()[1])
+size = offset + 8
+
+s = print_section_header(struct.unpack(f, data[offset:size]))
+offset = size
+size += 8
+print("<===========Section 7==============>")
+print(s)
+
+print_lat_long(s.split()[1], offset, size)
+offset += int(s.split()[1])
+size = offset + 8
+
+s = print_section_header(struct.unpack(f, data[offset:size]))
+offset = size
+size += 8
+print("<===========Section 8==============>")
+print(s)
+
+# Todo This is a PNG area
+create_png(s.split()[1], offset, size)
+offset += int(s.split()[1])
+size = offset + 8
+
+s = print_section_header(struct.unpack(f, data[offset:size]))
+offset = size
+size += 8
+print("<===========Section 9==============>")
+print(s)
+
+print_ascii(s.split()[1], offset, size)
+offset += int(s.split()[1])
+size = offset + 8
+
+
+print('\n')
+while True:
+    print(struct.unpack(f, data[offset:size]))
+    offset = size
+    size += 8
+
+
+
+
+
 
 
 

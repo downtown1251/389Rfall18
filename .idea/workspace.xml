@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="321d0234-42a2-4574-834e-422b69199bc1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/389Rfall18.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/389Rfall18.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/week/8/stub.py" beforeDir="false" afterPath="$PROJECT_DIR$/week/8/stub.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week/8/writeup/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/week/8/writeup/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,6 +11,26 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/week/8/fpff-spec.md">
+                <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+                  <state split_layout="SECOND">
+                    <first_editor />
+                    <second_editor />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1671015890">
@@ -24,7 +42,9 @@
           <entry key="project.open.time.12" value="2" />
           <entry key="project.open.time.13" value="4" />
           <entry key="project.open.time.14" value="3" />
+          <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.22" value="1" />
@@ -32,7 +52,7 @@
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="3" />
-          <entry key="project.opened" value="30" />
+          <entry key="project.opened" value="32" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -44,9 +64,9 @@
           <entry key="cybersecurity" value="1" />
           <entry key="elf" value="2" />
           <entry key="email" value="1" />
-          <entry key="md" value="45" />
+          <entry key="md" value="49" />
           <entry key="namejob" value="1" />
-          <entry key="png" value="6" />
+          <entry key="png" value="7" />
           <entry key="py" value="9" />
           <entry key="travel" value="1" />
           <entry key="travelsec" value="1" />
@@ -57,8 +77,8 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="C++" value="6" />
-          <entry key="Image" value="6" />
-          <entry key="Markdown" value="44" />
+          <entry key="Image" value="7" />
+          <entry key="Markdown" value="48" />
           <entry key="PLAIN_TEXT" value="52" />
           <entry key="Python" value="9" />
           <entry key="XML" value="2" />
@@ -68,14 +88,14 @@
         <counts>
           <entry key="S" value="2638" />
           <entry key="md" value="42519" />
-          <entry key="py" value="13206" />
+          <entry key="py" value="19012" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="42519" />
           <entry key="PLAIN_TEXT" value="2638" />
-          <entry key="Python" value="13206" />
+          <entry key="Python" value="19012" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -110,12 +130,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/week/8/stub.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="46" column="44" lean-forward="true" selection-start-line="46" selection-start-column="44" selection-end-line="46" selection-end-column="44" />
+            <state relative-caret-position="422">
+              <caret line="256" lean-forward="true" selection-start-line="256" selection-end-line="256" />
               <folding>
                 <element signature="e#24#34#0" expanded="true" />
-                <marker date="1541040222840" expanded="true" signature="231:236" ph="..." />
-                <marker date="1541040222840" expanded="true" signature="1399:1400" ph="..." />
+                <marker date="1541088152139" expanded="true" signature="245:250" ph="..." />
+                <marker date="1541088152139" expanded="true" signature="1482:1822" ph="..." />
+                <marker date="1541088152139" expanded="true" signature="2426:2818" ph="..." />
               </folding>
             </state>
           </provider>
@@ -132,9 +153,11 @@
       <find>ATTACKER_PORT</find>
       <find>format</find>
       <find>print_section_header</find>
+      <find>struct.calcsize(f)</find>
     </findStrings>
     <replaceStrings>
       <replace>1234</replace>
+      <replace>8</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -164,9 +187,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="4">
-    <option name="x" value="934" />
+    <option name="x" value="924" />
     <option name="y" value="27" />
-    <option name="width" value="914" />
+    <option name="width" value="924" />
     <option name="height" value="954" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -193,7 +216,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -205,20 +227,28 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
             <path>
               <item name="389Rfall18" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="389Rfall18" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="389Rfall18" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="389Rfall18" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
             <path>
               <item name="389Rfall18" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="389Rfall18" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="week" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="389Rfall18" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="389Rfall18" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="week" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="8" type="9f88c78c:ScopeViewTreeModel$FileNode" />
@@ -368,10 +398,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="934" y="27" width="914" height="954" extended-state="4" />
+    <frame x="924" y="27" width="924" height="954" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49880096" weight="0.30637813" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49880096" weight="0.30410022" />
       <window_info id="Structure" order="1" sideWeight="0.50119907" side_tool="true" weight="0.30493274" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -464,7 +494,6 @@
     </ignored-roots>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/week/2/venusaur.txt" />
     <entry file="file://$PROJECT_DIR$/week/2/admin.txt" />
     <entry file="file://$PROJECT_DIR$/week/2/adminLogin.txt" />
     <entry file="file://$PROJECT_DIR$/week/2/airline.txt" />
@@ -648,21 +677,21 @@
         <state relative-caret-position="188" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week/8/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor relative-caret-position="510">
-            <caret line="34" column="57" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="57" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/week/8/writeup/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="585">
             <caret line="39" column="37" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week/8/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SECOND">
+          <first_editor relative-caret-position="510">
+            <caret line="34" column="57" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="57" />
           </first_editor>
           <second_editor />
         </state>
@@ -676,14 +705,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/week/8/the picture.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/week/8/stub.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="46" column="44" lean-forward="true" selection-start-line="46" selection-start-column="44" selection-end-line="46" selection-end-column="44" />
+        <state relative-caret-position="422">
+          <caret line="256" lean-forward="true" selection-start-line="256" selection-end-line="256" />
           <folding>
             <element signature="e#24#34#0" expanded="true" />
-            <marker date="1541040222840" expanded="true" signature="231:236" ph="..." />
-            <marker date="1541040222840" expanded="true" signature="1399:1400" ph="..." />
+            <marker date="1541088152139" expanded="true" signature="245:250" ph="..." />
+            <marker date="1541088152139" expanded="true" signature="1482:1822" ph="..." />
+            <marker date="1541088152139" expanded="true" signature="2426:2818" ph="..." />
           </folding>
         </state>
       </provider>

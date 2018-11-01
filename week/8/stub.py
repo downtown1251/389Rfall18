@@ -2,11 +2,63 @@
 
 import sys
 import struct
+import binascii
+import datetime
 
 
 # You can use this method to exit on failure conditions.
 def bork(msg):
     sys.exit(msg)
+
+
+def print_header(item):
+    itemPrint = ''
+    count = 1
+    for i in item:
+        if offset == 8 and count == 1:
+            itemPrint += str(datetime.datetime.fromtimestamp(i)) + " "
+        elif (offset == 8 and count == 2) or (offset == 16 and count == 1):
+            stripped = str(hex(i)).strip("0x")
+            s = binascii.unhexlify(stripped)
+            itemPrint += s[::-1] + " "
+        elif (offset == 16 and count == 2):
+            itemPrint += str(int(i)) + " "
+        count += 1
+    return itemPrint
+
+
+def print_section_header(item):
+    itemPrint = ""
+    for i in item:
+        itemPrint += str(int(i)) + " "
+    return itemPrint
+
+
+def print_ascii(length, offset, size):
+    ascii = ""
+    totalBytes = 0
+    while totalBytes <= len(str(length)):
+
+        item = struct.unpack(f, data[offset:size])
+        for i in item:
+            stripped = str(hex(i)).strip("0x")
+            if len(stripped) % 2 != 0:
+                stripped += "0"
+            s = binascii.unhexlify(stripped)
+            ascii += s[::-1]
+            totalBytes += len(s)
+
+        offset = size
+        size += struct.calcsize(f)
+        totalBytes = len(ascii)
+        print(totalBytes)
+
+
+    print(ascii)
+    return size
+
+
+
 
 
 # Some constants. You shouldn't need to change these.
@@ -40,3 +92,48 @@ print("VERSION: %d" % int(version))
 # the rest of the header and the actual FPFF body. Good luck!
 
 print("-------  BODY  -------")
+f = "<LL"
+offset = 0
+size = int(struct.calcsize(f))
+sizeOfFile = len(data)
+start = True
+header = ""
+numSections = 0
+
+while start:
+    s = print_header(struct.unpack(f, data[offset:size]))
+    offset = size
+    size = size + struct.calcsize(f)
+    header += s.strip("\n")
+
+    if size >= 32:
+        start = False
+        print(header)
+        numSections = header[len(header) - 2]
+
+start = True
+while start:
+    s = print_section_header(struct.unpack(f, data[offset:size]))
+    offset = size
+    size += struct.calcsize(f)
+
+    if size >= 40:
+        start = False
+        section_length = s.split()[1]
+        print(s)
+
+s = print_ascii(section_length, offset, size)
+offset = s
+size = s + 8
+
+
+s = print_section_header(struct.unpack(f, data[offset:size]))
+offset = size
+size += struct.calcsize(f)
+print(s)
+
+
+
+
+
+

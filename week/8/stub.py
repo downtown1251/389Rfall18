@@ -4,13 +4,11 @@ import sys
 import struct
 import binascii
 import datetime
-import base64
 
 
 # You can use this method to exit on failure conditions.
 def bork(msg):
     sys.exit(msg)
-
 
 def print_header(item):
     itemPrint = ''
@@ -27,13 +25,11 @@ def print_header(item):
         count += 1
     return itemPrint
 
-
 def print_section_header(item):
     itemPrint = ""
     for i in item:
         itemPrint += str(int(i)) + " "
     return itemPrint
-
 
 def print_ascii(length, offset, size):
     ascii = ""
@@ -72,6 +68,19 @@ def print_array_of_words(length, offset, size):
         size += 8
     print(array)
 
+def print_array_dwords(length, offset, size):
+    array = []
+    totalBytes = 0
+    totalSize = len(data)
+    while totalBytes <= int(length) and offset <= totalSize and size <= totalSize:
+        item = struct.unpack(f, data[offset:size])
+        i1 = item[0]
+        i2 = item[1]
+        array.append(i1 + i2)
+        totalBytes += 8
+        offset = size
+        size += 8
+    print(array)
 
 def print_lat_long(length, offset, size):
     x = ""
@@ -99,23 +108,27 @@ def print_section_ref(offset, size):
 
 def create_png(length, offset, size):
     fh = open("the picture.png", "wb")
+
+    signature = b"\211PNG\r\n\032\n"
+
+    unpacked = ''
+
     totalBytes = 0
     while totalBytes <= int(length):
-        item = struct.unpack(f, data[offset:size])
-        for i in item:
-            totalBytes += 4
-            if totalBytes > int(length):
-                break
-            s = base64.b64encode(str(i))
-            fh.write(base64.b64decode(str(s)))
+        i1, i2= struct.unpack(f, data[offset:size])
+
+        unpacked += struct.pack(f, i1, i2)
+        totalBytes += 8
         offset = size
         size += 8
-
+    signature += unpacked
+    fh.write(signature)
 
 
 # Some constants. You shouldn't need to change these.
 MAGIC = 0xdeadbeef
 VERSION = 1
+
 
 if len(sys.argv) < 2:
     sys.exit("Usage: python2 stub.py input_file.fpff")
@@ -255,12 +268,24 @@ print_ascii(s.split()[1], offset, size)
 offset += int(s.split()[1])
 size = offset + 8
 
+s = print_section_header(struct.unpack(f, data[offset:size]))
+offset = size
+size += 8
+print("<===========Section 10==============>")
+print(s)
 
-print('\n')
-while True:
-    print(struct.unpack(f, data[offset:size]))
-    offset = size
-    size += 8
+print_ascii(s.split()[1], offset, size)
+offset += int(s.split()[1])
+size = offset + 8
+
+s = print_section_header(struct.unpack(f, data[offset:size]))
+offset = size
+size += 8
+print("<===========Section 11==============>")
+print(s)
+
+print_array_dwords(s.split()[1], offset, size)
+
 
 
 

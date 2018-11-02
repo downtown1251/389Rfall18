@@ -37,7 +37,7 @@ Which lets you download a file called update.fpff.
 
 2. The author of the file was laz0rh4x
 
-3. There are 9 sections in the file. 
+3. There are 9 sections in the file. There are really 11 sections in the file. 
 
 4.
 

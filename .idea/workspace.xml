@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="321d0234-42a2-4574-834e-422b69199bc1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/389Rfall18/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/389Rfall18/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/389Rfall18/week/8/stub.py" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/389Rfall18/week/8/stub.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/389Rfall18/week/8/writeup/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/389Rfall18/week/8/writeup/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/week/8/stub.py" beforeDir="false" afterPath="$PROJECT_DIR$/week/8/stub.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week/8/the picture.png" beforeDir="false" afterPath="$PROJECT_DIR$/week/8/the picture.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/week/8/writeup/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/week/8/writeup/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -105,15 +101,15 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="S" value="2638" />
-          <entry key="md" value="42902" />
-          <entry key="py" value="21107" />
+          <entry key="md" value="44957" />
+          <entry key="py" value="23289" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Markdown" value="42902" />
+          <entry key="Markdown" value="44957" />
           <entry key="PLAIN_TEXT" value="2638" />
-          <entry key="Python" value="21107" />
+          <entry key="Python" value="23289" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -125,8 +121,8 @@
         <entry file="file://$PROJECT_DIR$/week/8/writeup/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="638">
-                <caret line="76" column="6" selection-start-line="76" selection-start-column="6" selection-end-line="76" selection-end-column="6" />
+              <first_editor relative-caret-position="143">
+                <caret line="55" column="84" selection-start-line="55" selection-start-column="84" selection-end-line="55" selection-end-column="84" />
               </first_editor>
               <second_editor />
             </state>
@@ -136,10 +132,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/week/8/stub.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="119" column="41" selection-start-line="119" selection-start-column="41" selection-end-line="119" selection-end-column="41" />
+            <state relative-caret-position="193">
+              <caret line="111" column="27" selection-start-line="111" selection-start-column="27" selection-end-line="111" selection-end-column="27" />
               <folding>
                 <element signature="e#24#34#0" expanded="true" />
+                <element signature="e#202#693#0" />
+                <element signature="e#731#824#0" />
+                <element signature="e#869#1416#0" />
+                <element signature="e#1470#1802#0" />
+                <element signature="e#1794#2164#0" />
+                <element signature="e#1854#2196#0" />
+                <element signature="e#2605#2763#0" />
+                <element signature="e#2807#3198#0" />
+                <element signature="e#3151#3454#0" />
+                <element signature="e#4538#4772#0" />
+                <marker date="1541123090799" expanded="true" signature="208:210" ph="..." />
+                <marker date="1541123090799" expanded="true" signature="1825:2199" ph="..." />
+                <marker date="1541123090799" expanded="true" signature="3642:3955" ph="..." />
               </folding>
             </state>
           </provider>
@@ -157,6 +166,7 @@
       <find>format</find>
       <find>print_section_header</find>
       <find>struct.calcsize(f)</find>
+      <find>print</find>
     </findStrings>
     <replaceStrings>
       <replace>1234</replace>
@@ -419,7 +429,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3297491" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4997227" weight="0.37515226" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.4997227" visible="true" weight="0.37515226" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5011211" side_tool="true" weight="0.42798355" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49887893" weight="0.4129111" />
       <window_info anchor="bottom" id="Messages" order="10" />
@@ -703,10 +713,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/week/8/stub.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="119" column="41" selection-start-line="119" selection-start-column="41" selection-end-line="119" selection-end-column="41" />
+        <state relative-caret-position="193">
+          <caret line="111" column="27" selection-start-line="111" selection-start-column="27" selection-end-line="111" selection-end-column="27" />
           <folding>
             <element signature="e#24#34#0" expanded="true" />
+            <element signature="e#202#693#0" />
+            <element signature="e#731#824#0" />
+            <element signature="e#869#1416#0" />
+            <element signature="e#1470#1802#0" />
+            <element signature="e#1794#2164#0" />
+            <element signature="e#1854#2196#0" />
+            <element signature="e#2605#2763#0" />
+            <element signature="e#2807#3198#0" />
+            <element signature="e#3151#3454#0" />
+            <element signature="e#4538#4772#0" />
+            <marker date="1541123090799" expanded="true" signature="208:210" ph="..." />
+            <marker date="1541123090799" expanded="true" signature="1825:2199" ph="..." />
+            <marker date="1541123090799" expanded="true" signature="3642:3955" ph="..." />
           </folding>
         </state>
       </provider>
@@ -714,8 +737,8 @@
     <entry file="file://$PROJECT_DIR$/week/8/writeup/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="638">
-            <caret line="76" column="6" selection-start-line="76" selection-start-column="6" selection-end-line="76" selection-end-column="6" />
+          <first_editor relative-caret-position="143">
+            <caret line="55" column="84" selection-start-line="55" selection-start-column="84" selection-end-line="55" selection-end-column="84" />
           </first_editor>
           <second_editor />
         </state>

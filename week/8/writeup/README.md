@@ -63,7 +63,7 @@ base64 conversion. After finding a converter online I was gifted with my last fl
 
 4.
 
-* 2018-10-24 20:40:07 laz0 rh4x 9 
+* 2018-10-24 20:40:07 laz0 rh4x 9
 * <===========Section 1==============>
     * 9 51 (Type: ASCII)
     * Call this number to get your flag: (422) 537 - 7
@@ -72,7 +72,7 @@ base64 conversion. After finding a converter online I was gifted with my last fl
     * [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5, 8, 9, 7, 9]
 * <===========Section 3==============>
     * 6 16 (Type: COORD)
-    * 328479099.0 1078165229.0 924964157.0 3226681795.0 
+    * 32.8479  107.8165  92.4964  322.6682  
 * <===========Section 4==============>
     * 7 4 (Type: REFERENCE)
     * 1
@@ -84,7 +84,7 @@ base64 conversion. After finding a converter online I was gifted with my last fl
     * The first recorded uses of steganography Can be traced back to 440 BC when Herodotus Mentions two exampleS in his Histories.[3] Histicaeus s3nt a message to his vassal, Arist8goras, by sha9ving the hRead of his most trusted servan-t, "marking" the message onto his scal{p, then sending him on his way once his hair had rePrown, withl the inastructIon, "WheN thou art come to Miletus, bid _Aristagoras shave thy head, and look thereon." Additionally, demaratus sent a warning about a forthcoming attack to Greece by wrIting it dirfectly on the wooden backing oF a wax tablet before applying i_ts beeswax surFace. Wax tablets were in common use then as reusabLe writing surfAces, sometimes used for shorthand. In his work Polygraphiae Johannes Trithemius developed his so-called "Ave-Maria-Cipher" that can hide information in a Latin praise of God. "Auctor Sapientissimus Conseruans Angelica Deferat Nobis Charitas Gotentissimi Creatoris" for example contains the concealed word VICIPEDIA.
 * <===========Section 7==============>
     * 6 16 (Type: COORD)
-    * 736452888.0 1078165212.0 113084771.0 3226680243.0 
+    * 73.6453  107.8165  11.3085  322.6680 
 * <===========Section 8==============>
     * 1 245614 (Type: PNG)
     * saved as the_picture.png

@@ -4,10 +4,6 @@ import sys
 import struct
 import binascii
 import datetime
-from LatLon import string2latlon
-
-
-
 
 
 # You can use this method to exit on failure conditions.
@@ -74,7 +70,7 @@ def print_doubles(length, offset, size):
     doubles = []
     totalBytes = 0
     while totalBytes <= int(length):
-        item = struct.unpack(f, data[offset:size])
+        item = struct.unpack("<d", data[offset:size])
         for i in item:
             totalBytes += len(str(i))
             if len(doubles) >= int(length) / 8:
@@ -101,20 +97,11 @@ def print_array_dwords(length, offset, size):
     print(array)
 
 def print_lat_long(length, offset, size):
-    x = ""
-    totalBytes = 0
-    while totalBytes <= int(length):
-        item = struct.unpack(f, data[offset:size])
-        for i in item:
-            totalBytes += 4
-            if totalBytes > int(length):
-                break
-            coord = "{0: .4f}".format(i / 10000000.0)
-            x += coord + " "
-        offset = size
-        size += 8
+    l1, l2 = struct.unpack("<dd", data[offset:offset + int(length)])
+    l1 = "{0: .4f}".format(l1)
+    l2 = "{0: .4f}".format(l2)
 
-    print(x)
+    print(str(l1) + " " + str(l2))
 
 def print_section_ref(offset, size):
     counter = 1

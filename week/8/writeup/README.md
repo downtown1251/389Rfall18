@@ -101,6 +101,6 @@ base64 conversion. After finding a converter online I was gifted with my last fl
 
 5. 
 * CMSC389R-{c0rn3rs0ne_airlin3s_to_the_m00n}
-* CMS389R-{PlaIN_dIfF_FLAG}
+* CMS389R-{PlaIN_dIfF_FLAG
 * CMSC389R-{h1dd3n-s3ct10n-1n-f1l3}
 

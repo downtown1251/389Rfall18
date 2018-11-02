@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="321d0234-42a2-4574-834e-422b69199bc1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week/8/stub.py" beforeDir="false" afterPath="$PROJECT_DIR$/week/8/stub.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/week/8/writeup/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/week/8/writeup/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -12,38 +10,6 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="DockManager">
-    <window id="2">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/week/8/fpff-spec.md">
-                <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-                  <state split_layout="SECOND">
-                    <first_editor />
-                    <second_editor />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/week/8/README.md">
-                <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-                  <state split_layout="SECOND">
-                    <first_editor relative-caret-position="510">
-                      <caret line="34" column="57" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="57" />
-                    </first_editor>
-                    <second_editor />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1671015890">
@@ -57,7 +23,7 @@
           <entry key="project.open.time.14" value="4" />
           <entry key="project.open.time.15" value="2" />
           <entry key="project.open.time.16" value="1" />
-          <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.17" value="2" />
           <entry key="project.open.time.18" value="2" />
           <entry key="project.open.time.20" value="2" />
           <entry key="project.open.time.22" value="1" />
@@ -66,7 +32,7 @@
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="3" />
-          <entry key="project.opened" value="38" />
+          <entry key="project.opened" value="39" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -121,8 +87,8 @@
         <entry file="file://$PROJECT_DIR$/week/8/writeup/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="143">
-                <caret line="55" column="84" selection-start-line="55" selection-start-column="84" selection-end-line="55" selection-end-column="84" />
+              <first_editor relative-caret-position="310">
+                <caret line="103" column="26" selection-start-line="103" selection-start-column="26" selection-end-line="103" selection-end-column="26" />
               </first_editor>
               <second_editor />
             </state>
@@ -132,20 +98,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/week/8/stub.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
+            <state relative-caret-position="1605">
               <caret line="111" column="27" selection-start-line="111" selection-start-column="27" selection-end-line="111" selection-end-column="27" />
               <folding>
                 <element signature="e#24#34#0" expanded="true" />
-                <element signature="e#202#693#0" />
-                <element signature="e#731#824#0" />
-                <element signature="e#869#1416#0" />
-                <element signature="e#1470#1802#0" />
-                <element signature="e#1794#2164#0" />
-                <element signature="e#1854#2196#0" />
-                <element signature="e#2605#2763#0" />
-                <element signature="e#2807#3198#0" />
-                <element signature="e#3151#3454#0" />
-                <element signature="e#4538#4772#0" />
                 <marker date="1541123090799" expanded="true" signature="208:210" ph="..." />
                 <marker date="1541123090799" expanded="true" signature="1825:2199" ph="..." />
                 <marker date="1541123090799" expanded="true" signature="3642:3955" ph="..." />
@@ -429,7 +385,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3297491" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.4997227" visible="true" weight="0.37515226" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.4997227" visible="true" weight="0.37637028" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5011211" side_tool="true" weight="0.42798355" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49887893" weight="0.4129111" />
       <window_info anchor="bottom" id="Messages" order="10" />
@@ -596,13 +552,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/week/5/README.md">
-      <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor />
           <second_editor />
         </state>
       </provider>
+      <provider editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/week/5/main.c">
       <provider selected="true" editor-type-id="text-editor">
@@ -612,13 +568,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/week/5/writeup/README.md">
-      <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor />
           <second_editor />
         </state>
       </provider>
+      <provider editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -693,13 +649,16 @@
     <entry file="file://$PROJECT_DIR$/week/8/the picture.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/week/8/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor relative-caret-position="510">
-            <caret line="34" column="57" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="57" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/week/8/stub.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1605">
+          <caret line="111" column="27" selection-start-line="111" selection-start-column="27" selection-end-line="111" selection-end-column="27" />
+          <folding>
+            <element signature="e#24#34#0" expanded="true" />
+            <marker date="1541123090799" expanded="true" signature="208:210" ph="..." />
+            <marker date="1541123090799" expanded="true" signature="1825:2199" ph="..." />
+            <marker date="1541123090799" expanded="true" signature="3642:3955" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -711,34 +670,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week/8/stub.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="111" column="27" selection-start-line="111" selection-start-column="27" selection-end-line="111" selection-end-column="27" />
-          <folding>
-            <element signature="e#24#34#0" expanded="true" />
-            <element signature="e#202#693#0" />
-            <element signature="e#731#824#0" />
-            <element signature="e#869#1416#0" />
-            <element signature="e#1470#1802#0" />
-            <element signature="e#1794#2164#0" />
-            <element signature="e#1854#2196#0" />
-            <element signature="e#2605#2763#0" />
-            <element signature="e#2807#3198#0" />
-            <element signature="e#3151#3454#0" />
-            <element signature="e#4538#4772#0" />
-            <marker date="1541123090799" expanded="true" signature="208:210" ph="..." />
-            <marker date="1541123090799" expanded="true" signature="1825:2199" ph="..." />
-            <marker date="1541123090799" expanded="true" signature="3642:3955" ph="..." />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/week/8/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SECOND">
+          <first_editor relative-caret-position="510">
+            <caret line="34" column="57" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="57" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/week/8/writeup/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="143">
-            <caret line="55" column="84" selection-start-line="55" selection-start-column="84" selection-end-line="55" selection-end-column="84" />
+          <first_editor relative-caret-position="310">
+            <caret line="103" column="26" selection-start-line="103" selection-start-column="26" selection-end-line="103" selection-end-column="26" />
           </first_editor>
           <second_editor />
         </state>

@@ -82,19 +82,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/week/8/writeup/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SECOND">
-              <first_editor relative-caret-position="1545">
-                <caret line="103" column="26" selection-start-line="103" selection-start-column="26" selection-end-line="103" selection-end-column="26" />
+              <first_editor relative-caret-position="-13">
+                <caret line="70" column="25" lean-forward="true" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/week/8/stub.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="40">
@@ -105,16 +105,6 @@
                 <marker date="1541198105572" expanded="true" signature="1789:2166" ph="..." />
                 <marker date="1541198105572" expanded="true" signature="3407:3720" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/week/8/fpff-spec.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SECOND">
-              <first_editor />
-              <second_editor />
             </state>
           </provider>
         </entry>
@@ -153,8 +143,8 @@
         <option value="$PROJECT_DIR$/week/5/myfuncs.S" />
         <option value="$PROJECT_DIR$/week/5/writeup/README.md" />
         <option value="$PROJECT_DIR$/week/7/writeup/README.md" />
-        <option value="$PROJECT_DIR$/week/8/writeup/README.md" />
         <option value="$PROJECT_DIR$/week/8/stub.py" />
+        <option value="$PROJECT_DIR$/week/8/writeup/README.md" />
       </list>
     </option>
   </component>
@@ -200,15 +190,22 @@
           <expand>
             <path>
               <item name="389Rfall18" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="389Rfall18" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="389Rfall18" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="389Rfall18" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
             <path>
               <item name="389Rfall18" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="389Rfall18" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="week" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="389Rfall18" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="389Rfall18" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="week" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="8" type="9f88c78c:ScopeViewTreeModel$FileNode" />
@@ -231,7 +228,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541040242365" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541204672211" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -370,8 +367,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="924" y="27" width="914" height="954" extended-state="4" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49880096" weight="0.30299538" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49880096" visible="true" weight="0.30299538" />
       <window_info id="Structure" order="1" sideWeight="0.50119907" side_tool="true" weight="0.30410022" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -386,7 +384,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3297491" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.4997227" visible="true" weight="0.37637028" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4997227" visible="true" weight="0.37637028" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5011211" side_tool="true" weight="0.42798355" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49887893" weight="0.4129111" />
       <window_info anchor="bottom" id="Messages" order="10" />
@@ -660,16 +658,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week/8/writeup/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor relative-caret-position="1545">
-            <caret line="103" column="26" selection-start-line="103" selection-start-column="26" selection-end-line="103" selection-end-column="26" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/week/8/fpff-spec.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SECOND">
@@ -688,6 +676,16 @@
             <marker date="1541198105572" expanded="true" signature="1789:2166" ph="..." />
             <marker date="1541198105572" expanded="true" signature="3407:3720" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week/8/writeup/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SECOND">
+          <first_editor relative-caret-position="-13">
+            <caret line="70" column="25" lean-forward="true" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

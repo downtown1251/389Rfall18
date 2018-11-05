@@ -22,7 +22,7 @@ for salt in salts:
     if len(hashes) != 0:
         for pwd in wordlist:
             s = salt + pwd
-            digest = hashlib.sha512(s.encode()).hexdigest()
+            digest = hashlib.sha512(s).hexdigest()
 
             for h in hashes:
                 if h.strip("\n") == digest:

@@ -29,4 +29,27 @@ the code printed out:
 
 ### Part 2 (40 Pts)
 
+To get started on this portion of the assignment, I immediately tried the command `nc 142.93.117.193 7331` to see what
+type of trivia it was asking. 
+
+![first look](firstLook.png)
+
+Looks like this is trivia where the answers are hashes. At this point, I went to `part2.py` and input the correct socket
+information to get the socket to connect to the correct IP and port. After running just this part of the code, 
+it was easy to see that I had to parse the SHA and password out of the returned string. 
+
+I decided the easiest way to do this was through a regex. Splitting the string seemed like a lot of effort and I was 
+worried that splitting it might miss pieces of the item to hash. This worked fairly well after figuring out the correct
+regex's. Using [Pythex](https://pythex.org/) helped immensely in this endeavor. 
+
+After getting the correct information out of the string, it was time to start sending the information through the 
+correct hash function then through the socket. Getting the hash was simple after doing part 1 of this assignment.  
+At first run of the program after sending the hashes through the socket the program hung. It took me a while to 
+realize that this was because there was no newline at the end of the string. 
+
+Finally, information kept coming and going through the socket. However, I realized that I forget to terminate the 
+loop that was sending information so that I could finally see the flag. After fixing this issue, 
+the flag was finally printed. 
+
+![flag](flag.png)
 

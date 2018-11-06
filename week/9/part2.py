@@ -8,7 +8,6 @@ import re
 
 host = "142.93.117.193"   # IP address or URL
 port = 7331  # port
-algorithms = [x for x in hashlib.algorithms_guaranteed]
 
 regex1 = re.compile('sha\d{1,3} | md\d')
 regex2 = re.compile('\w*\W*$')

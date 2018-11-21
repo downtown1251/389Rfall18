@@ -61,6 +61,7 @@ for i in range(1, 1000):
     lenSecret = i
     if lenSecret + len(message) + 9 > totalLength:
         totalLength = 64 * multipler
+        multipler += 1
     numBitOne = 1
     numZeroes = totalLength - lenSecret - len(message) - numBitOne - numEndian
     paddingLength = totalLength - lenSecret - len(message)

@@ -9,7 +9,7 @@ import time
 
 host = "142.93.118.186" # IP address here
 port = 1234  # Port here
-message = 'Country Kitchen Buffet'    # original message here
+message = "Country Kitchen Buffet"   # original message here
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
@@ -30,7 +30,7 @@ d = s.recv(1024)
 fake_md5 = md5py.new('A' * 64)
 fake_md5.A, fake_md5.B, fake_md5.C, fake_md5.D = md5py._bytelist2long(legit.decode('hex'))
 
-malicious = 'South Park'  # put your malicious message here
+malicious = "South Park"  # put your malicious message here
 
 # update legit hash with malicious message
 fake_md5.update(malicious)
@@ -53,25 +53,26 @@ print(fake_hash)
 # (i.e. len(secret + message + padding) = 64 bytes = 512 bits
 
 # Calculate Necessary Lengths Padding
-totalLength = 64
 numEndian = 8
-length = chr(((len(message) * 8) % pow(2, 64)))
-
-for i in range(1, 15):
+totalLength = 56
+for i in range(1, 32):
     print("Using Secret Length: " + str(i))
     lenSecret = i
     numBitOne = 1
-    numZeroes = totalLength - lenSecret - len(message) - numBitOne- numEndian
+    numZeroes = totalLength - lenSecret - len(message) - numBitOne
     paddingLength = totalLength - lenSecret - len(message)
 
     # Create Padding
     padding = '\x80'
-    for x in range(numZeroes):
+    print("The length of the message: " + str(len(message)))
+    print("The number of zeroes being appended: " + str(numZeroes))
+    for x in range(0, numZeroes):
         padding += '\x00'
 
-    padding += (length+'\x00\x00\x00\x00\x00\x00\x00')
-    print(paddingLength == len(padding))
-    print((lenSecret + len(message) + len(padding)) == totalLength)
+    padding += ('\xb0\x00\x00\x00\x00\x00\x00\x00')
+    print("Total Length of padding: " + str(len(padding)))
+    print("The total length of Secret + Message + Padding: " + str(lenSecret + len(message) + len(padding)))
+
 
     # payload is the message that corresponds to the hash in `fake_hash`
     # server will calculate md5(secret + payload)

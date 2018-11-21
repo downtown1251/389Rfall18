@@ -19,6 +19,12 @@ The only exception, was instead of calculating lengths on bits I used bytes. To 
 indeed the correct length, I verified that the padding adding with the lengths of the message and secret 
 equaled 64. Since this was the case it was time to send it back through the server to find the flag. 
 
+Unfortunately, I have no idea why my code is not properly returning the flag. My blocks are 64 bytes long
+with the proper padding of zeroes. I have a feeling that I am not calculating the length properly. 
+I have tried: the length of the message in bits, the length of the message plus the length of the secret in bits,
+the length of the message in bytes, and the length of the message plus the secret in bytes. None of these worked. 
+ 
+
 ### Part 2 (30 Pts)
 
 This portion of the assignment was pretty straightforward. 

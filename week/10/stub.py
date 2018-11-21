@@ -23,7 +23,8 @@ time.sleep(1)
 l = (d.split('Your hash: '))
 legit = l[1].strip('\n')
 print(legit)
-s.recv(1024)
+d = s.recv(1024)
+
 
 # initialize hash object with state of a vulnerable hash
 fake_md5 = md5py.new('A' * 64)
@@ -56,11 +57,11 @@ totalLength = 64
 numEndian = 8
 length = chr(((len(message) * 8) % pow(2, 64)))
 
-for i in range(1, (totalLength - len(message) - numEndian)):
+for i in range(1, 15):
     print("Using Secret Length: " + str(i))
     lenSecret = i
     numBitOne = 1
-    numZeroes = totalLength - lenSecret - len(message) - numBitOne - numEndian
+    numZeroes = totalLength - lenSecret - len(message) - numBitOne- numEndian
     paddingLength = totalLength - lenSecret - len(message)
 
     # Create Padding
@@ -69,6 +70,8 @@ for i in range(1, (totalLength - len(message) - numEndian)):
         padding += '\x00'
 
     padding += (length+'\x00\x00\x00\x00\x00\x00\x00')
+    print(paddingLength == len(padding))
+    print((lenSecret + len(message) + len(padding)) == totalLength)
 
     # payload is the message that corresponds to the hash in `fake_hash`
     # server will calculate md5(secret + payload)
@@ -77,12 +80,13 @@ for i in range(1, (totalLength - len(message) - numEndian)):
 
     payload = message + padding + malicious
     s.send('2'+'\n')
-    s.recv(1024)
+    d = s.recv(1024)
     s.send(fake_hash+'\n')
-    s.recv(1024)
+    d = s.recv(1024)
     s.send(payload+'\n')
     time.sleep(1)
     d = s.recv(1024)
+    print(d)
     if 'Hmm...' not in str(d):
         print(d)
         s.close()

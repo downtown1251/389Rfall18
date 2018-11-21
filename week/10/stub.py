@@ -54,12 +54,15 @@ print(fake_hash)
 
 # Calculate Necessary Lengths Padding
 numEndian = 8
-totalLength = 56
-for i in range(1, 32):
+totalLength = 64
+multipler = 2
+for i in range(1, 1000):
     print("Using Secret Length: " + str(i))
     lenSecret = i
+    if lenSecret + len(message) + 9 > totalLength:
+        totalLength = 64 * multipler
     numBitOne = 1
-    numZeroes = totalLength - lenSecret - len(message) - numBitOne
+    numZeroes = totalLength - lenSecret - len(message) - numBitOne - numEndian
     paddingLength = totalLength - lenSecret - len(message)
 
     # Create Padding

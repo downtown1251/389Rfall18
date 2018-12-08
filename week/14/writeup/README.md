@@ -11,22 +11,22 @@ Digital acknowledgement of honor pledge: *Kate Mann*
 ## Assignment 10 Writeup
 
 ### Part 1 (40 Pts)
-Well the first thing I did was look around the website. It didn't look like there was any place for user input. 
-However, I noticed in the url bar that when I clicked on an item link, the url displayed `item?id=0`. First thing
-I tried was just inputting a succession of numbers. Once I got to `item?id=3` a blank page was displayed. 
-Which I thought was interesting because obviously this was a database rather than actual linked pages because 
-otherwise I would have received a 404 error. So obviously this was the correct parameter to try and craft an
+Well the first thing I did was look around the website. At first glance there didn't look like there was any place for 
+user input. Eventually, I noticed the url displayed `item?id=0` which looked promising. First thing
+I tried was just inputting a succession of numbers to see what would happen. Once I got to `item?id=3` a blank page 
+was displayed. Which I thought was interesting because obviously this was a database rather than actual linked pages 
+because otherwise I would have received a 404 error. Obviously this was the correct parameter to try and craft an
 exploit. 
 
 I decided it was time to try some other query types to see what they would return. The first two that I tried 
 were directly from the slides on WAF bypasses. However, neither one produced interesting results. 
 Both just brought me directly back to the item page. Then I decided to test whether this was the correct format 
-for the injections by forcefully causing an error with incorrect results. I tried inputting `' && 0x50 is null` 
-which should have caused an error to occur but didn't. It still brought me back to the same item page. At this
-point I realized that there must be some more sql command parameters after my inputted text. After looking back 
-through the Web I slides I realize I should try using a comment at the end of my input. 
-Using `' || 0x50 is not null -- -` did the trick! The entire database was dumped to the webpage. Inside 
-the database was the flag `CMSC389R-{yOU-are_the_5ql_n1nja}` which is priceless!
+for the injections by forcefully causing an error with an always failing query string. I tried inputting 
+`' && 0x50 is null` which should have caused an error to occur but didn't which told me that I was missing something 
+in my query. After a while of search around the internet I realized that there must be some more query parameters 
+after my inputted text. After looking back through the Web I slides I noticed that I should probably try using a 
+comment at the end of my input. Using `' || 0x50 is not null -- -` did the trick! The entire database was dumped 
+to the webpage. Inside the database was the flag `CMSC389R-{yOU-are_the_5ql_n1nja}` which is priceless!
 
 
 ### Part 2 (60 Pts)
